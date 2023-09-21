@@ -1,0 +1,93 @@
+* See All Connamds:
+	php artisan
+---------------------------------------
+* Routes:
+1. Route List:
+	php artisan route:list
+---------------------------------------
+* Controller:
+1. Make Controller:
+	php artisan make:controller <name>
+2. Make Controller with resource (Can make all CRUD function)
+	php artisan make:controller --resource <name>
+---------------------------------------
+* Migration
+1. Making Migration:
+	php artisan make:migration <create_posts_table> --create=<"table_name">
+2. Add column to old table:
+	php artisan make:migration <add_is_admin_to_post_table> --table=<post>
+3. Rollback the last Migration:
+	php artisan migrate:rollback
+4. Delete all the tables:
+	php artisan migrate:reset
+5. Migrate
+	php artisian migrate
+6. Rollback + Migrate in a single command
+	php artisan migrate:refresh
+
+---------------------------------------
+* Model
+1. Make Model:
+	php artisan make:model <Name> [Note: Name must start with a capital letter and singular form]
+2. Make Model with Migration:
+	php artisan make:model <Name> -m [Note: Name must start with a capital letter singular form 
+					so migration name willbe be start with small letter and plural from.]
+3.Make Model with Migration & controller
+	php artisan make:model <Name> -mc [Note: Name must start with a capital letter singular form 
+					so migration name willbe be start with small letter and plural from
+					the controller will automatically add the name controller wtih the name.]
+
+
+---------------------------------------
+*Request
+1. Make a Request
+	php artisan make:request <Name>
+
+
+---------------------------------------
+*Middleware
+1. Make a Middleware
+	php artisan make:middleware <Name>
+
+
+---------------------------------------
+*Maintenance Mode
+1. Application down in maintenance mode
+	php artisan down
+2. Application in now live
+	php artisan up
+
+---------------------------------------
+*Auth Command:
+Run All commands step by step:
+
+	composer require laravel/ui
+	php artisan ui vue --auth
+	or
+	php artisan ui bootstrap --auth
+	npm install && npm run dev
+	php artisan migrate
+---------------------------------------
+*Factory:
+1. Create Factory connected with Model
+	php artisan make:factory <Name> --model=<Name of the Model you want to connect with>
+
+---------------------------------------
+*Seed:
+1.Seed data
+	php artisan db:seed
+
+---------------------------------------
+
+*Policy
+1. Create Policy
+	php artisan make:policy <Name>
+
+2. Create Policy connected with Modal
+	php artisan make:policy <Name> --model=<model name>
+
+---------------------------------------
+*Publish file
+1. see list of files to publish
+	php artisan vendor:publish
+
