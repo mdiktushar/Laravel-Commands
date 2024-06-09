@@ -91,3 +91,8 @@ Run All commands step by step:
 1. see list of files to publish
 	php artisan vendor:publish
 
+
+
+*Storage folder link to public
+	php artisan storage:link
+
